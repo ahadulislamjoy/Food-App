@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/CategoriesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Categories"
+        android:textSize="20sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/CategoriesTextView"
+        android:paddingLeft="18dp"
+        android:layout_marginTop="5dp"
+        android:paddingRight="18dp" />
+
+    <TextView
+        android:id="@+id/popularTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recyclerView"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:text="Popular"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/popularTextView"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="9dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp" />
+    <TextView
+        android:id="@+id/recentTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Recent"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/recyclerView2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/recentTextViewId"
+        />
+
+</RelativeLayout>
+
+
+
+
+</ScrollView>

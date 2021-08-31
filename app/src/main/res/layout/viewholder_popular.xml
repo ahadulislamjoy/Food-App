@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/imageViewId1"
+        android:layout_width="220dp"
+        android:layout_height="120dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTextViewId"
+        app:layout_constraintVertical_bias=".03"
+        app:cardCornerRadius="30dp">
+        <ImageView
+            android:id="@+id/imageViewId"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/burger_1" />
+    </androidx.cardview.widget.CardView>
+
+
+    <TextView
+        android:id="@+id/titleTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="title"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/feeTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0.0"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        android:textColor="#373b54"
+        android:layout_marginTop="3dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewId1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="৳"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias=".9"
+        app:layout_constraintBottom_toBottomOf="@+id/feeTextViewId"
+        app:layout_constraintEnd_toStartOf="@+id/feeTextViewId"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewId1" />
+
+    <TextView
+        android:id="@+id/addButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+ Add"
+        android:textStyle="bold"
+        android:layout_marginTop="3dp"
+        android:textColor="#ffffff"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:layout_marginBottom="3dp"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:background="@drawable/teel_button_backround"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/feeTextViewId" />
+</androidx.constraintlayout.widget.ConstraintLayout>
