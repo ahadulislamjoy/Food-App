@@ -31,14 +31,12 @@
             android:padding="5dp"
             android:layout_marginTop="150dp">
 
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="5dp">
-
 
                 <ImageView
                     android:layout_width="40dp"
@@ -62,7 +60,6 @@
                 android:layout_weight="1"
                 android:orientation="vertical"
                 android:padding="5dp">
-
 
                 <ImageView
                     android:layout_width="40dp"
@@ -135,7 +132,6 @@
                 android:orientation="vertical"
                 android:padding="5dp">
 
-
                 <ImageView
                     android:layout_width="40dp"
                     android:layout_height="30dp"
@@ -164,6 +160,7 @@
             android:layout_marginTop="50dp"
             android:background="@drawable/search_backround"
             android:drawableLeft="@drawable/search"
+            android:drawableRight="@drawable/filter"
             android:ems="10"
             android:inputType="textPersonName"
             android:padding="5dp"
@@ -179,7 +176,6 @@
 
         </FrameLayout>
     </RelativeLayout>
-
 
     <!--<ScrollView
         android:id="@+id/scrollView2"
@@ -274,7 +270,6 @@
 
 
     </ScrollView>-->
-
 
             <!-- <com.google.android.material.bottomappbar.BottomAppBar
                  android:id="@+id/app_bar"
@@ -401,9 +396,6 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         app:layout_constraintVertical_bias="0" />-->
 
-
-
-
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
@@ -436,9 +428,6 @@
             app:layout_anchor="@id/bottomNavigationViewId"
             app:tint="#ffffff" />
 
-
-
-
  <!--   <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationViewId"
         android:layout_width="match_parent"
@@ -455,6 +444,5 @@
         >
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>-->
-
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

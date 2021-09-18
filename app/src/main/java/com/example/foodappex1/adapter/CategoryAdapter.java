@@ -13,7 +13,6 @@ import com.example.foodappex1.R;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
-
 public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.ViewHolder> {
     ArrayList<CategoryDomain> categoryDomains;
 

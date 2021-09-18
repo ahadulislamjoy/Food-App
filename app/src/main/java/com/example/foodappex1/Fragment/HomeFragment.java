@@ -13,10 +13,12 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.foodappex1.Domain.CategoryDomain;
+import com.example.foodappex1.Domain.LunchDomain;
 import com.example.foodappex1.Domain.PopularDomain;
 import com.example.foodappex1.Domain.RecentDomain;
 import com.example.foodappex1.R;
 import com.example.foodappex1.adapter.CategoryAdapter;
+import com.example.foodappex1.adapter.LunchAdapter;
 import com.example.foodappex1.adapter.PopularAdapter;
 import com.example.foodappex1.adapter.RecentAdapter;
 
@@ -26,7 +28,8 @@ public class HomeFragment extends Fragment {
    private CategoryAdapter adapter;
     private PopularAdapter adapter1;
     private RecentAdapter adapter2;
-    private RecyclerView recyclerViewCategoryList,recyclerViewPopularList,recyclerViewRecentList;
+    private LunchAdapter adapter3;
+    private RecyclerView recyclerViewCategoryList,recyclerViewPopularList,recyclerViewRecentList,recyclerViewLunchList;
     View v;
     @Nullable
     @Override
@@ -35,8 +38,26 @@ public class HomeFragment extends Fragment {
         recyclerViewCategory();
         recyclerViewPopular();
         recyclerViewRecent();
-
+        recyclerViewLunch();
         return v;
+    }
+
+    private void recyclerViewLunch() {
+        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(getContext(),LinearLayoutManager.VERTICAL,false);
+        recyclerViewLunchList =v.findViewById(R.id.recyclerView4);
+        recyclerViewLunchList.setLayoutManager(linearLayoutManager);
+
+        ArrayList<LunchDomain> lunchList = new ArrayList<>();
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani1));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani2));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani3));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani4));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani5));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani6));
+        lunchList.add(new LunchDomain("biriyani",R.drawable.biriyani7));
+        adapter3 = new LunchAdapter(lunchList);
+        recyclerViewLunchList.setAdapter(adapter3);
+
     }
 
     private void recyclerViewRecent() {

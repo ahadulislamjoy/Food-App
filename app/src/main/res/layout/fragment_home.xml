@@ -63,8 +63,29 @@
         android:layout_marginTop="4dp"
         android:paddingLeft="18dp"
         android:paddingRight="18dp"
-        android:layout_marginBottom="80dp"
         android:layout_below="@+id/recentTextViewId"
+        />
+    <TextView
+        android:id="@+id/lunchTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="5dp"
+        android:text="Lunch"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/recyclerView3"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:paddingLeft="18dp"
+        android:paddingRight="18dp"
+        android:layout_marginBottom="80dp"
+        android:layout_below="@+id/lunchTextViewId"
         />
 
 </RelativeLayout>
